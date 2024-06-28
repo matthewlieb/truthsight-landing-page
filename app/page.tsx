@@ -10,7 +10,7 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const form = e.target as HTMLFormElement;
+    const form = e.currentTarget;
     const formData = new FormData(form);
 
     try {
