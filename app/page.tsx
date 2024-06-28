@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -34,7 +33,7 @@ export default function Home() {
       <header className="text-black body-font bg-white py-6">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-black mb-4 md:mb-0">
-            <Image src="/truthsight-logo.png" alt="TruthSight Logo" width={40} height={40} />
+            <img src="/truthsight-logo.png" alt="TruthSight Logo" width={40} height={40} />
             <span className="ml-3 text-3xl">TruthSight.ai</span>
           </a>
           <div className="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -58,7 +57,7 @@ export default function Home() {
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
               A Chrome extension to detect deepfakes. Get a free guide on spotting deepfakes!
             </p>
-            <Image src="/truthsight-logo.png" alt="TruthSight Logo" width={100} height={100} className="mx-auto" />
+            <img src="/truthsight-logo.png" alt="TruthSight Logo" width={100} height={100} className="mx-auto" />
           </div>
           <div id="signup" className="bg-gray-100 rounded-lg p-8 flex flex-col mx-auto w-full mt-10 md:mt-0 max-w-md">
             <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
@@ -155,7 +154,7 @@ export default function Home() {
       <footer className="text-gray-600 body-font">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <Image src="/truthsight-logo.png" alt="TruthSight Logo" width={40} height={40} />
+            <img src="/truthsight-logo.png" alt="TruthSight Logo" width={40} height={40} />
             <span className="ml-3 text-xl">TruthSight.ai</span>
           </a>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 TruthSight.ai —
