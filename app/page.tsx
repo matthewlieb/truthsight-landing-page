@@ -55,7 +55,7 @@ export default function Home() {
           <div className="mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">Welcome to TruthSight.ai</h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
-              A Chrome extension to detect deepfakes. Get a free guide on spotting deepfakes!
+              A Chrome extension to detect deepfakes.
             </p>
             <img src="/truthsight-logo.png" alt="TruthSight Logo" width={100} height={100} className="mx-auto" />
           </div>
@@ -158,7 +158,7 @@ export default function Home() {
             <span className="ml-3 text-xl">TruthSight.ai</span>
           </a>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 TruthSight.ai —
-            <a href="https://twitter.com/truthsight" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@truthsight</a>
+            <a href="https://twitter.com/TruthsightAI" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@TruthsightAI</a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">
