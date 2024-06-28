@@ -10,15 +10,14 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const form = e.currentTarget;
+    const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
-    const formDataEntries = Object.fromEntries(formData.entries());
 
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formDataEntries as Record<string, string>).toString(),
+        body: new URLSearchParams(formData as any).toString(),
       });
       if (response.ok) {
         setMessage('Subscription successful');
@@ -106,14 +105,14 @@ export default function Home() {
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
-                <div className="flex-grow">
-                  <h2 className="text-black text-lg title-font font-medium mb-3">FADA</h2>
-                  <ul className="list-disc list-inside">
-                    <li>Detection model for thispersondoesnotexist.com</li>
-                    <li>Compare existing photos using vector embedding comparison</li>
-                    <li>Detect deepfakes from one of the most popular sources</li>
-                  </ul>
-                </div>
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-black text-lg title-font font-medium mb-3">FADA</h2>
+                <ul className="list-disc list-inside">
+                  <li>Detection model for thispersondoesnotexist.com</li>
+                  <li>Compare existing photos using vector embedding comparison</li>
+                  <li>Detect deepfakes from one of the most popular sources</li>
+                </ul>
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -123,14 +122,14 @@ export default function Home() {
                   <circle cx="6" cy="18" r="3"></circle>
                   <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                 </svg>
-                <div className="flex-grow">
-                  <h2 className="text-black text-lg title-font font-medium mb-3">Ensemble Model</h2>
-                  <ul className="list-disc list-inside">
-                    <li>Deepfake detection of photos</li>
-                    <li>Combines multiple models for higher accuracy</li>
-                    <li>Continuous improvement with more data</li>
-                  </ul>
-                </div>
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-black text-lg title-font font-medium mb-3">Ensemble Model</h2>
+                <ul className="list-disc list-inside">
+                  <li>Deepfake detection of photos</li>
+                  <li>Combines multiple models for higher accuracy</li>
+                  <li>Continuous improvement with more data</li>
+                </ul>
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -139,14 +138,14 @@ export default function Home() {
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-                <div className="flex-grow">
-                  <h2 className="text-black text-lg title-font font-medium mb-3">Future Features</h2>
-                  <ul className="list-disc list-inside">
-                    <li>Deepfake video detection</li>
-                    <li>Audio deepfake detection</li>
-                    <li>Real-time detection capabilities</li>
-                  </ul>
-                </div>
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-black text-lg title-font font-medium mb-3">Future Features</h2>
+                <ul className="list-disc list-inside">
+                  <li>Deepfake video detection</li>
+                  <li>Audio deepfake detection</li>
+                  <li>Real-time detection capabilities</li>
+                </ul>
               </div>
             </div>
           </div>
