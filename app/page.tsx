@@ -87,7 +87,6 @@ export default function Home() {
         </div>
       </section>
 
-      // Update the Features Section
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
